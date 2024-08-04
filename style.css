@@ -1,0 +1,266 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Hind&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4; /* Background color for the page */
+}
+
+/* Header */
+header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url('13.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Navigation Bar */
+nav {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for the nav */
+}
+
+.logo {
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+.menu a:hover {
+    border: 1px solid indianred;
+    background: transparent;
+}
+
+.register a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 8px;
+    background: indianred;
+}
+
+.register a:hover {
+    border: 1px solid indianred;
+    background: transparent;
+}
+
+.menu-button {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-button .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+}
+
+/* Text on Header */
+.h-text {
+    text-align: center;
+    color: #fff;
+}
+
+.h-text span {
+    letter-spacing: 5px;
+}
+
+.h-text h1 {
+    font-size: 3.5em;
+}
+
+.h-text p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.h-text a {
+    text-decoration: none;
+    background: indianred;
+    padding: 10px 20px;
+    color: #fff;
+    letter-spacing: 5px;
+    transition: 0.4s;
+}
+
+.h-text a:hover {
+    border: 1px solid indianred;
+    background: transparent;
+}
+
+/* Sections */
+.section {
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 80px; /* Ensure sections are not too close to the top */
+}
+
+.section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.btn {
+    text-decoration: none;
+    background: indianred;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.btn:hover {
+    background: #d9534f;
+}
+
+/* Product Grid */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product {
+    flex: 1 1 calc(33.333% - 40px);
+    max-width: calc(33.333% - 40px);
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product p {
+    font-size: 1.2em;
+    color: #333;
+    font-weight: bold;
+}
+
+.product a {
+    text-decoration: none;
+    color: indianred;
+}
+
+/* Category Grid */
+.category-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.category {
+    flex: 1 1 calc(33.333% - 40px);
+    max-width: calc(33.333% - 40px);
+    text-align: center;
+}
+
+.category img {
+    max-width: 100%;
+    height: auto;
+}
+
+.category p {
+    font-size: 1em;
+    color: #666;
+}
+
+.category a {
+    text-decoration: none;
+    color: indianred;
+}
+
+/* Contact Form */
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact button {
+    background: indianred;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background: #d9534f;
+}
+
+/* Responsive Menu */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 100%;
+        z-index: 1;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+
+    .menu a {
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    .menu-button {
+        display: flex;
+    }
+}

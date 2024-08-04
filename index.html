@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bag Sales Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Bag Boutique</div>
+            <div class="menu-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="menu">
+                <a href="#home">Home</a>
+                <a href="#new-arrivals">New Arrivals</a>
+                <a href="#categories">Categories</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+            <div class="register">
+                <a href="#">Sign Up</a>
+            </div>
+        </nav>
+        <section id="home" class="h-text">
+            <span>Discover</span>
+            <h1>Stylish Bags for Every Occasion</h1>
+            <p>Shop the latest trends and find your perfect bag.</p>
+            <a href="#shop">Shop Now</a>
+        </section>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="section home">
+        <h2>Welcome to Bag Boutique</h2>
+        <p>Discover our exclusive collection of bags designed to elevate your style. From casual day bags to elegant evening purses, we have something for every occasion.</p>
+        <a href="#new-arrivals" class="btn">Browse Our Collection</a>
+    </section>
+
+    <!-- New Arrivals Section -->
+    <section id="new-arrivals" class="section new-arrivals">
+        <h2>New Arrivals</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="new-bag1.jpg" alt="New Bag 1">
+                <h3>Chic Leather Tote</h3>
+                <p>₹12,999</p>
+                <a href="#">View Details</a>
+            </div>
+            <div class="product">
+                <img src="new-bag2.jpg" alt="New Bag 2">
+                <h3>Elegant Evening Clutch</h3>
+                <p>₹6,499</p>
+                <a href="#">View Details</a>
+            </div>
+            <div class="product">
+                <img src="new-bag3.jpg" alt="New Bag 3">
+                <h3>Casual Canvas Backpack</h3>
+                <p>₹5,999</p>
+                <a href="#">View Details</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="section categories">
+        <h2>Shop by Category</h2>
+        <div class="category-grid">
+            <div class="category">
+                <img src="tote-bags.jpg" alt="Tote Bags">
+                <h3>Tote Bags</h3>
+                <p>Find the perfect tote for work or play.</p>
+                <a href="#">Shop Tote Bags</a>
+            </div>
+            <div class="category">
+                <img src="clutches.jpg" alt="Clutches">
+                <h3>Evening Clutches</h3>
+                <p>Add a touch of elegance to your evening wear.</p>
+                <a href="#">Shop Clutches</a>
+            </div>
+            <div class="category">
+                <img src="backpacks.jpg" alt="Backpacks">
+                <h3>Backpacks</h3>
+                <p>Explore our range of stylish and functional backpacks.</p>
+                <a href="#">Shop Backpacks</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="section contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need assistance, feel free to reach out to us. Our customer service team is here to help.</p>
+        <form action="#" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
